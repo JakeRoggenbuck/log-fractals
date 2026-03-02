@@ -4,6 +4,10 @@ I gave my [previous work](https://github.com/jakeRoggenbuck/on-logs-research), w
 
 <img width="1273" height="254" alt="image" src="https://github.com/user-attachments/assets/f5aa50e9-3fd7-4eed-8bd5-1f914f1d0591" />
 
+## Explore
+
+Live site: [log-digits.html](https://jr0.org/fractals/log-digits.html)
+
 ## Running
 
 ```sh
