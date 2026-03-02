@@ -8,6 +8,8 @@ I gave my [previous work](https://github.com/jakeRoggenbuck/on-logs-research), w
 
 Live site: [log-digits.html](https://jr0.org/fractals/log-digits.html)
 
+Source: https://github.com/JakeRoggenbuck/log-fractals
+
 ## Running
 
 ```sh
