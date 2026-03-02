@@ -6,7 +6,7 @@ I gave my [previous work](https://github.com/jakeRoggenbuck/on-logs-research), w
 
 ## Explore
 
-Live site: [log-digits.html](https://jr0.org/fractals/log-digits.html)
+Live site: [log-digit.html](https://jr0.org/fractals/log-digit.html)
 
 Source: https://github.com/JakeRoggenbuck/log-fractals
 
