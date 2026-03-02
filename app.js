@@ -49,9 +49,16 @@ vec3 palette(float t) {
 
 float digitFromLogValue(float value, int location) {
   float frac = fract(abs(value));
-  float pow10 = pow(10.0, float(location));
-  float scaled = floor(frac * pow10 * 10.0 + 0.0000001);
-  return mod(floor(scaled / pow10), 10.0);
+  float digit = 0.0;
+  for (int i = 0; i < 16; i++) {
+    frac *= 10.0;
+    float current = floor(frac + 0.0000001);
+    frac = fract(frac);
+    if (i == location) {
+      digit = mod(current, 10.0);
+    }
+  }
+  return digit;
 }
 
 void main() {
@@ -324,7 +331,7 @@ window.addEventListener("keydown", (e) => {
     controls.digitLocation.value = String(state.digitLocation);
     updateControlLabels();
   } else if (e.key === "]") {
-    state.digitLocation = Math.min(12, state.digitLocation + 1);
+    state.digitLocation = Math.min(6, state.digitLocation + 1);
     controls.digitLocation.value = String(state.digitLocation);
     updateControlLabels();
   } else if (e.key === "g" || e.key === "G") {
